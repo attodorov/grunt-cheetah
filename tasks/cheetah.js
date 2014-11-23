@@ -39,7 +39,7 @@ module.exports = function(grunt) {
       // Handle options.
       src += options.punctuation;
       // now instrument src with cheetah
-      var cheetah = require("cheetah-module");
+      var cheetah = require("cheetahjs");
       //console.log("CHEETAH: " + cheetah);
       // Write the destination file.
       grunt.file.write(f.dest, cheetah.instrument(src));
