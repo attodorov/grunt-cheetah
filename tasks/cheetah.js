@@ -37,7 +37,7 @@ module.exports = function(grunt) {
       }).join(grunt.util.normalizelf(options.separator));
 
       // Handle options.
-      src += options.punctuation;
+      //src += options.punctuation;
       // now instrument src with cheetah
       var cheetah = require("cheetahjs/index");
       console.log("CHEETAH: " + cheetah.instrument);
